@@ -1,0 +1,20 @@
+<div id="header" >
+    <h1 class="mb-3">Buscar por ID de empleado</h1>
+  </div>
+
+
+<div id="searchInput">
+    <form [formGroup]="searchForm" (ngSubmit)="searchById( id.value)">
+        <p-inputGroup>
+            <input #id formControlName="user_id" id="helper-input" type="text" pInputText placeholder="Keyword" />
+            <button type="submit" pButton icon="pi pi-search" class="p-button-warning" id="helper"></button>
+        </p-inputGroup>
+        
+    </form>
+</div>
+
+<div class="cards-container mt-5 mb-4" id="helper2" >
+    <main-search-card *ngFor="let user of usersFounded"
+    [user]="user"
+    ></main-search-card>
+</div>

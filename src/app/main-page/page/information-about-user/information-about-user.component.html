@@ -1,0 +1,27 @@
+<div id="header" >
+    <h1 class="mb-3">Informacion del usuario</h1>
+  </div>
+
+
+
+<div  id="container" class="mt-5" *ngIf="userFounded">
+
+            <div class="">
+                <img width="400px" mat-card-image src="../../../../assets/images/defaultImagePerfil.jpg" alt="">
+            </div>
+            <div class="information"> 
+                <h2>Informacion</h2>
+                <ul id="information">
+                    <li> <strong>ID Empleado:</strong>  {{ userFounded[0].id_empleado }} </li>
+                    <li> <strong>Nombre del empleado:</strong>  {{ userFounded[0].nombre_empleado }} {{ userFounded[0].apellidos_empleado }} </li>
+                    <li> <strong>ID de autoridad:</strong>  {{ userFounded[0].id_autoridad }}  </li>
+                    <li> <strong> Ultimo login registrado:  </strong>  {{ userFounded[0].ultimologin_empleado }}  </li>
+                    <li> <strong> Password:  </strong>  {{ userFounded[0].pwd_empleado}}  </li>
+                    <li> <strong> Vigencia Empleado:  </strong>  {{ userFounded[0].vigencia_empleado}}  </li>
+                    <li> <strong> RPL Empleado:  </strong>  {{ userFounded[0].rpl_empleado}}  </li>
+                    <li> <strong> Caja empleado:  </strong>  {{ userFounded[0].caja_empleado}}  </li>
+                    <li> <strong> RBL nube empleado:  </strong>  {{ userFounded[0].rplnube_empleado}}  </li>
+                </ul>
+
+            </div>
+</div>

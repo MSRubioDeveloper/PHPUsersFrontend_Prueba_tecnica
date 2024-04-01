@@ -1,0 +1,39 @@
+
+#searchInput{
+    display: flex;
+    justify-content: center;
+}
+
+#helper{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#helper-input{
+    border-top-left-radius:12px ;
+    border-bottom-left-radius:12px ;
+    padding: 3px;
+    padding-left: 10px;
+    width: 260px;
+}
+
+#header h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 46px;
+
+    margin-bottom: 70px !important;
+}
+
+
+#helper2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#helper2 main-search-card {
+    margin: 20px;
+    
+}

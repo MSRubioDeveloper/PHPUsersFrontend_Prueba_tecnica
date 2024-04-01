@@ -1,0 +1,16 @@
+.card {
+    max-width: 400px;
+  }
+  
+  .header-image {
+    background-image: url('../../../../assets/images/defaultImagePerfil.jpg');
+    background-size: cover;
+  }
+
+  .card{
+    color: white;
+  }
+
+  .login{
+    color: red;
+  }
